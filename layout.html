@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/layout.css">
+    </head>
+
+    <body>
+        
+        <div style="text-align: right;">
+            <ul style="list-style-type: none; display: inline;">
+                <li style="display: inline;"><a href="">MAIN</a></li>
+                <li style="display: inline;"><a href="">LOGIN</a></li>
+                <li style="display: inline;"><a href="">회원가입</a></li>
+            </ul>
+        </div>
+
+        <ul id="naviul">
+            <li id="navili"><a href="">홈</a></li>
+            <li id="navili"><a href="">HTML_태그</a></li>
+            <li id="navili"><a href="">HTML_속성</a></li>
+            <li id="navili"><a href="">HTML_CSS</a></li>
+        </ul>
+
+        <header>
+            <h2>HTML_TAG</h2>
+        </header>
+
+        <section>
+            <nav style="width: auto; height: 900px; overflow: auto;">
+                <ul id="menuul">
+                    <li id="menuli" onclick="tagmain()"><a href="#">HTML 태그</a></li>
+                    <li id="menuli" onclick="taghtml()"><a href="#">html</a></li>
+                    <li id="menuli" onclick="taghead()"><a href="#">head</a></li>
+                    <li id="menuli" onclick="tagbody()"><a href="#">body</a></li>
+                    <li id="menuli" onclick="p()"><a href="#">p</a></li>
+                    <li id="menuli" onclick="br()"><a href="#">br</a></li>
+                    <li id="menuli" onclick="tagtitle()"><a href="#">title</a></li>
+                    <li id="menuli" onclick="tagimg()"><a href="#">img</a></li>
+                    <li id="menuli" onclick="tagabbr()"><a href="#">abbr</a></li>
+                    <li id="menuli"><a href="#">button</a></li>
+                    <li id="menuli"><a href="#">del</a></li>
+                    <li id="menuli"><a href="#">div</a></li>
+                    <li id="menuli"><a href="#">footer</a></li>
+                    <li id="menuli"><a href="#">meta</a></li>
+                    <li id="menuli"><a href="#">table</a></li>
+                    <li id="menuli"><a href="#">script</a></li>
+                    <li id="menuli"><a href="#">select</a></li>
+                    <li id="menuli"><a href="#">option</a></li>
+                    <li id="menuli"><a href="#">mark</a></li>
+                    <li id="menuli"><a href="#">fieldset</a></li>
+                    <li id="menuli"><a href="#">legend</a></li>
+                    <li id="menuli"><a href="#">details</a></li>
+                </ul>
+            </nav>
+
+            <script>
+
+            </script>
+
+            <!-- 본문 -->
+            <article>
+                <h1 id="maintitle">HTML 태그 레퍼런스</h1>
+                <p id="mainparagraph">왼쪽 리스트에서 태그를 클릭하세요.</p>
+                <hr>
+                <h1 id="example"></h1>
+                <code id="examplecode"></code>
+            </article>
+            </section>
+            <!-- 본문 끝 -->
+
+
+            <!-- 리스트 클릭 시 자바스크립트 -->
+        <script>
+            function tagmain() {
+                document.getElementById("maintitle").innerHTML = "HTML 태그 레퍼런스"
+                document.getElementById("mainparagraph").innerHTML = "왼쪽 리스트에서 태그를 클릭하세요."
+                document.getElementById("example").innerHTML = ""
+                document.getElementById("examplecode").innerHTML = ""
+            }
+            function taghtml() {
+                document.getElementById("maintitle").innerHTML = "HTML html 태그"
+                document.getElementById("mainparagraph").innerHTML = "HTML 문서의 루트 요소를 정의할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;html&gt; ...생략... &lt;/html&gt;"
+            }
+            function taghead() {
+                document.getElementById("maintitle").innerHTML = "HTML head 태그"
+                document.getElementById("mainparagraph").innerHTML = "해당 문서에 대한 정보인 메타데이터의 집합을 정의할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;head&gt; <br> &lt;meta charset=UTF-8 &gt; <br> &lt;/head&gt;"
+            }
+            function tagbody() {
+                document.getElementById("maintitle").innerHTML = "HTML body 태그"
+                document.getElementById("mainparagraph").innerHTML = "해당 HTML 문서의 텍스트, 하이퍼링크, 이미지, 리스트 등과 같은<br> 모든 콘텐츠를 포함하는 영역을 정의할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;body&gt; <br><br> &lt;p&gt;이 문장은 단락입니다.&lt;/p&gt; 안녕하세요.&lt;br&gt; <p> 반갑습니다. <br><br>&lt;/body&gt;"
+            }
+            function p() {
+                document.getElementById("maintitle").innerHTML = "HTML p 태그"
+                document.getElementById("mainparagraph").innerHTML = "p 태그는 문단을 정의할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;p&gt;이 문장은 단락입니다.&lt;/p&gt; <p> &lt;p&gt;이 문장은 단락입니다.&lt;/p&gt;"
+            }
+            function br() {
+                document.getElementById("maintitle").innerHTML = "HTML br 태그"
+                document.getElementById("mainparagraph").innerHTML = "br 태그는 줄 바꿈이 필요할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "안녕하세요.&lt;br&gt; <p> 반갑습니다."
+            }
+            function tagtitle() {
+                document.getElementById("maintitle").innerHTML = "HTML title 태그"
+                document.getElementById("mainparagraph").innerHTML = "title 태그는 웹페이지의 제목을 설정할 때 사용합니다. (head 태그 내에서 사용)"
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;title&gt; My WebPage &lt;/title&gt;"
+            }
+            function tagimg() {
+                document.getElementById("maintitle").innerHTML = "HTML img 태그"
+                document.getElementById("mainparagraph").innerHTML = "img 태그는 그림을 삽입할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;img src=img.jpg alt=이미지&gt;"
+            }
+            function tagabbr() {
+                document.getElementById("maintitle").innerHTML = "HTML abbr 태그"
+                document.getElementById("mainparagraph").innerHTML = "abbr 태그는 축약형 단어를 정의할 때 사용합니다."
+                document.getElementById("example").innerHTML = "예제"
+                document.getElementById("examplecode").innerHTML = "&lt;p&gt; &lt;abbr title=International Olympic Committee&gt; &lt;/abbr&gt; <p> 국제 올림픽 위원회&lt;/p&gt;"
+            }
+
+        </script>
+            <!-- 자바스크립트 끝 -->
+
+
+        <footer>
+            <p>웹 페이지 제작자 : 조주연</p>
+        </footer>
+
+    </body>
+</html>
