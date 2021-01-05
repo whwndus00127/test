@@ -1,3 +1,42 @@
-h1, h2 {
-  font-family: Lato;
+table {
+    width: 900px;
+    table-layout: fixed;
 }
+
+
+table, th {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    height: 90px;
+    padding: 6px;
+}
+
+th {
+    background-color: orange;
+    padding: 10px;
+}
+
+#sunday {
+    color: red;
+}
+
+#satday {
+    color: blue;
+}
+
+.satnum {
+    color: blue;
+}
+
+.sunnum {
+    color: red;
+}
+
+
+
+
+
